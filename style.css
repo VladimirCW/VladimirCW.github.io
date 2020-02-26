@@ -1,0 +1,17 @@
+.well {
+    margin: 2em;
+}
+p {
+    font-size: 20px;
+}
+h1, #description {
+    text-align: center;
+}
+h3 {
+    text-shadow: 2px 2px 6px black;
+}
+ol {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+}

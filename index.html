@@ -1,26 +1,31 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
 <h1>Automation test infrastructure setups.</h1>
-<p>Here we will add all notes that is needed to setup infrastructure and any dependencies to create test automation
+<p id="description">Here we will add all notes that is needed to setup infrastructure and any dependencies to create
+    test automation
     framework using Java</p>
-<div>
+<div class="well">
     <h3>Download Git</h3>
     <a href="https://git-scm.com/downloads">link</a>
     <h3>Setup Git</h3>
     <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">link</a>
     <br>
     <h3>Instal Java</h3>
-    <p>
-        Go to the <a href="https://www.oracle.com/java/technologies/javase-downloads.html">link</a>
-        and download latest LTS package of JDK.
-    </p>
-    <p>After downloading install it.</p>
-    <p>
-        Check that java was properly installed<br>
-        Open any console (for example CMD - press Win+R -> type "cmd" -> press Enter)<br>
-        In console type "java -version"
-        In console type "javac -version"
-    </p>
+    <ol class="list-group">
+        <li class="list-group-item">Go to the <a href="https://www.oracle.com/java/technologies/javase-downloads.html">link</a>
+            and download latest LTS package of JDK.</li>
+        <li class="list-group-item">After downloading install it.</li>
+        <li class="list-group-item">Check that java was properly installed</li>
+        <li class="list-group-item">Open any console (for example CMD - press Win+R -> type "cmd" -> press Enter)</li>
+        <li class="list-group-item">In console type "java -version</li>
+        <li class="list-group-item">In console type "javac -version"</li>
+    </ol>
+
     <p>
         If you see an error <code>'javac' is not recognized as an internal or external command, operable program or
         batch file.</code>
@@ -28,17 +33,17 @@
     </p>
     <h3>Set up Java environment variables</h3>
     <p>
-    <ol>
-        <li>Start</li>
-        <li>This PC</li>
-        <li>Click mouse right button -> "Properties"</li>
-        <li>Advanced system settings</li>
-        <li>Advanced -> Environment variables</li>
-        <li>Add new system variable <code>JAVA_HOME = path to installed java</code></li>
-        <li>Save it</li>
-        <li>Select system "Path" variable -> click Edit</li>
-        <li>Click New -> type <code>%JAVA_HOME\bin%</code></li>
-        <li>Save</li>
+    <ol class="list-group">
+        <li class="list-group-item">Start</li>
+        <li class="list-group-item">This PC</li>
+        <li class="list-group-item">Click mouse right button -> "Properties"</li>
+        <li class="list-group-item">Advanced system settings</li>
+        <li class="list-group-item">Advanced -> Environment variables</li>
+        <li class="list-group-item">Add new system variable <code>JAVA_HOME = path to installed java</code></li>
+        <li class="list-group-item">Save it</li>
+        <li class="list-group-item">Select system "Path" variable -> click Edit</li>
+        <li class="list-group-item">Click New -> type <code>%JAVA_HOME\bin%</code></li>
+        <li class="list-group-item">Save</li>
     </ol>
     </p>
     <p>
@@ -46,10 +51,20 @@
         <code>java -version</code>
         <code>javac -version</code>
         You should see similar message<br>
-        <img src="./images/java_version.JPG">
+        <img src="./images/java_version.JPG" class="img-thumbnail">
         <br>
-        <img src="./images/javac_version.JPG">
+        <br>
+        <img src="./images/javac_version.JPG" class="img-thumbnail">
     </p>
+    <h3>Install maven</h3>
+    <ol class="list-group">
+        <li class="list-group-item">Go to <a href="https://maven.apache.org/">link</a></li>
+        <li class="list-group-item">Download binary zip archive</li>
+        <li class="list-group-item">Extract archive into C root folder</li>
+        <li class="list-group-item">Set system variable M2 as 'C:\apache-maven-{version}\bin'</li>
+        <li class="list-group-item">Add %M2% variable to Path system variable</li>
+        <li class="list-group-item">Check that maven was installed <code>mvn -version</code></li>
+    </ol>
 </div>
 </body>
 </html>
